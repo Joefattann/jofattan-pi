@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Portfolio Website Design</title>
+    <link rel="stylesheet" href="style.css">
+    <!----Font awesome cdn font icon css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+    <div class="hero-header">
+        <div class="wrapper">
+            <header>
+                <div class="logo">
+                    <div class="logo-text">About Me</div>
+                </div>
+                <nav>
+                    <div class="togglebtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </nav>
+            </header>
+            <div class="container">
+                <div class="hero-pic">
+                    <img src="images.jpg" alt="profile pic">
+                </div>
+                <div class="hero-text">
+                    <h5>Hi I'm <span class="input">Ilkomerz 60</span></h5>
+                    <h1>Jofattan Faiz Betryan</h1>
+                    <p> Salam kenal semua! Perkenalkan, nama saya Jofattan Faiz Betryan, namun banyak teman-teman yang lebih akrab menyapa saya dengan panggilan Joo. Saya berasal dari kota Bukittinggi, yang terletak di Sumatera Barat. Saat ini, saya adalah bagian dari Ilkomerz 60. Saya memiliki minat yang besar dalam bidang kepemimpinan, di mana saya senang mengasah kemampuan untuk memimpin dan bekerja sama dengan orang lain. Selain itu, saya juga memiliki hobi bermain futsal, yang tidak hanya menjadi cara saya menjaga kebugaran, tetapi juga sarana untuk mengembangkan teamwork dan strategi dalam permainan.
+                    </p>
+
+                    <div class="btn-group">
+                        <a href="https://www.instagram.com/joefattann" class="btn active" target="_blank">Instagram</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!---typed js for typing text effect-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+    <script>
+        /** creating button click show hide navbar **/
+        var togglebtn = document.querySelector(".togglebtn");
+        var nav = document.querySelector(".navlinks");
+        var links = document.querySelector(".navlinks li");
+
+        togglebtn.addEventListener("click", function(){
+            this.classList.toggle("click");
+            nav.classList.toggle("open");
+        })
+
+        var typed = new Typed(".input", {
+            strings: ["Ilkomerz 60"], // Only this text will be typed
+            typeSpeed: 70,
+            backSpeed: 55,
+            loop: true
+        });
+    </script>
+</body>
+</html>
